@@ -54,13 +54,33 @@ print("===========================")
 
 
 #Section 5: Mini-Project — Profile Card
+from datetime import date
 
 fname = input("What is your first name? ")
 lname = input("What is your last name? ")
 hometown = input("Where are you from? City, State ")
 hobby = input("What do you like to do during your free time? ")
 fun_fact = input("Give me a fun fact about you. ")
-age = input("How old are you? ")
+
+birth_year = int(input("What year were you born? "))
+age = date.today().year - birth_year
+
+print("╔══════════════════════════════╗")
+print(f"   Profile:  {fname} {lname}")
+print("╚══════════════════════════════╝")
+print(f"Hometown: {hometown}")
+print(f"Hobby: {hobby}")
+print(f"Fun fact: {fun_fact}")
+print(f"Age: {age}")
+
+fname = input("What is your first name? ")
+lname = input("What is your last name? ")
+hometown = input("Where are you from? City, State ")
+hobby = input("What do you like to do during your free time? ")
+fun_fact = input("Give me a fun fact about you. ")
+
+birth_year = int(input("What year were you born? "))
+age = date.today().year - birth_year
 
 print("╔══════════════════════════════╗")
 print(f"   Profile:  {fname} {lname}")
