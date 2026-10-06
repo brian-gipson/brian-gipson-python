@@ -12,13 +12,11 @@ print(is_student, type(is_student))
 
 
 #Section 2: User Input and Math
+from datetime import date
 
 name = input("What is your name? ")
 year_born = int(input("What year were you born? "))
-
-from datetime import date
 this_year = date.today().year
-
 approx_age = (this_year - year_born)
 
 print(f"Hi, {name}! You are approximately {approx_age} years old.")
