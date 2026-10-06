@@ -36,9 +36,9 @@ print(f"{num1} x {num2} = {num}")
 
 #Section 4: Formatted Receipt
 
-item = input("What item did you purchase? ")
-price = float(input("How much did the item cost? $"))
-quantity = int(input("How many items did you purchase? "))
+item = "Python textbook"
+price = 29.99
+quantity = 2
 
 total = (price * quantity)
 
